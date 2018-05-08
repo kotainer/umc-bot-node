@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "telegraf": "^3.20.0"
+    "telegraf": "^3.20.0",
+    "telegraf-i18n": "^6.1.0"
   }
 }
