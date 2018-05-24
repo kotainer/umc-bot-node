@@ -1,3 +1,10 @@
-import { UmcBot } from "./lib/umcBot";
+import { UmcBot } from './lib/umcBot';
+import mongoose from 'mongoose';
 
-const app = new UmcBot();
+mongoose.connect('mongodb://localhost/bot_umc');
+
+try {
+    new UmcBot();
+} catch (e) {
+    console.error(e);
+}

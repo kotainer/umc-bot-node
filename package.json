@@ -4,13 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --experimental-modules index.mjs",
+    "deopt": "node --experimental-modules --trace-deopt index.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "telegraf": "^3.20.0",
-    "telegraf-i18n": "^6.1.0"
+    "lodash": "^4.17.10",
+    "mongoose": "^5.0.18",
+    "redis": "^2.8.0",
+    "request": "^2.85.0",
+    "telegraf": "^3.21.0",
+    "telegraf-i18n": "^6.1.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^5.0.0-alpha.2",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   }
 }
