@@ -39,5 +39,9 @@
     "clear": "Clear",
     "send": "Send",
     "reaction": "Reaction",
-    "link": "Ссылка"
+    "link": "Ссылка",
+    "finishBuild": "Пост сформирован. Выберите дальнейшее действие",
+    "publishNow": "Разместить сейчас",
+    "publishLater": "Назначить время размещения",
+    "decline": "Отклонить"
 }

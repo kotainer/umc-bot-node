@@ -8,8 +8,8 @@ const schema = new mongoose.Schema(
         default: uuid,
     },
 
-    userId: String,
-    channelId: String,
+    userId: Number,
+    channelId: Number,
     text: String,
 
     types: {
