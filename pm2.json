@@ -1,0 +1,16 @@
+{
+  "apps" : [{
+    "script"    : "./index.mjs",
+    "instances" : "1",
+    "exec_mode" : "cluster" ,
+    "name": "umc_bot",
+    "env": {
+        "NODE_ENV": "production"
+    }
+  }, {
+    "script"    : "./modules/client.py",
+    "interpreter": "/usr/bin/python3",
+    "interpreter_args": "-u",
+    "name": "umc_bot_p"
+  }]
+}

@@ -64,6 +64,36 @@ const schema = new mongoose.Schema(
       default: false,
     },
 
+    publishTime: {
+      type: Date,
+    },
+
+    // Отложенное удаление
+    isDeferredDeletion: {
+      type: Boolean,
+      default: false,
+    },
+
+    status: {
+      type: String,
+      default: 'new',
+      enum: [
+        'new',
+        'agreement',
+        'pending',
+        'publish',
+      ],
+    },
+
+    calculatedPrice: {
+      type: Number,
+      default: 0,
+    },
+
+    ownerPrice: {
+      type: Number,
+    },
+
     createdAt: {
       type: Date,
       default: new Date,
